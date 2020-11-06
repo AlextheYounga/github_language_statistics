@@ -6,7 +6,7 @@ require "logger"
 require "colorize"
 
 desc "This task will make async requests to Github and retrieve the langauge statistics from each repo in Github"
-task :github => :environment do
+task :sync_github => :environment do
   api_address = "https://api.github.com/users/#{Rails.application.credentials.github_username}/repos"
   languages = []
 
