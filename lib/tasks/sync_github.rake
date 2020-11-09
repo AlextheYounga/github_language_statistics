@@ -1,3 +1,4 @@
+require "rails"
 require "async"
 require "async/barrier"
 require "async/http/internet"
